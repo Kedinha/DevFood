@@ -1,0 +1,30 @@
+{
+	"cli": {
+		"version": ">= 12.4.1",
+		"appVersionSource": "remote"
+	},
+	"build": {
+		"preview": {
+			"autoIncrement": true,
+			"android": {
+				"distribution": "internal",
+				"autoIncrement": "versionCode"
+			},
+			"channel": "preview"
+		},
+		"production": {
+			"autoIncrement": true,
+			"android": {
+				"autoIncrement": "versionCode"
+			},
+			"channel": "production"
+		},
+		"development": {
+			"developmentClient": true,
+			"distribution": "internal"
+		}
+	},
+	"submit": {
+		"production": {}
+	}
+}
